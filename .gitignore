@@ -1,1 +1,3 @@
-*.json
+
+secrets.json
+settings.json
