@@ -1,7 +1,7 @@
 import json
 
 class Settings:
-    settings = json.load(open("settings.json"))
+    settings = json.load(open("json_files/settings.json"))
 
     @classmethod
     def get_api_ip(cls):
@@ -13,9 +13,7 @@ class Settings:
 
     @classmethod
     def get_dev_status(cls):
-        if cls.settings["dev_status"] == "False":
-            return True
-        return False
+        return cls.settings["dev_status"]
 
     @classmethod
     def get_bot_name(cls):
