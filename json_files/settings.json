@@ -1,7 +1,10 @@
 {
-  "bot_name": "eva",
+  "bot_name_main": "eva",
+  "bot_name_test": "eva-dev",
   "bot_prefix": "eva-command",
-  "api_ip": "192.168.1.191",
-  "api_port": "81",
-  "dev_status": true
+  "api_ip": "localhost",
+  "api_port": "9998",
+  "dev_status": true,
+  "main_channel": "1204880350551998484",
+  "test_channel": "1204880387252293693"
 }
