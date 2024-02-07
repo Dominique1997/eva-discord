@@ -17,8 +17,18 @@ class Settings:
 
     @classmethod
     def get_bot_name(cls):
-        return str(cls.settings["bot_name"]).lower()
+        if cls.get_dev_status():
+            return str(cls.settings["bot_name_test"]).lower()
+        return str(cls.settings["bot_name_main"]).lower()
 
     @classmethod
     def get_bot_prefix(cls):
         return cls.settings["bot_prefix"]
+
+    @classmethod
+    def get_main_channel_id(cls):
+        return cls.settings["main_channel"]
+
+    @classmethod
+    def get_test_channel_id(cls):
+        return cls.settings["test_channel"]
