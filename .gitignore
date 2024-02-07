@@ -1,4 +1,5 @@
 json_files/secrets.json
+json_files/settings.json
 ffmpeg-master-latest-win64-gpl.zip
 ffmpeg.exe
 ffplay.exe
