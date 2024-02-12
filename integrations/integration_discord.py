@@ -21,14 +21,6 @@ class IntegrationDiscord:
             bot.run(token=Secrets.get_main_token())
 
     @bot.event
-    async def on_ready():
-        print("ready for use")
-        if Settings.get_dev_status():
-            await bot.get_channel(Settings.get_main_channel_id()).connect()
-        else:
-            await bot.get_channel(Settings.get_test_channel_id()).connect()
-
-    @bot.event
     async def on_message(ctx):
         channel = ctx.channel
         message = str(ctx.content).lower()
