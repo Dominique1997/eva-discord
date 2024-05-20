@@ -1,5 +1,6 @@
 import json
 
+
 class Settings:
     settings = json.load(open("json_files/settings.json"))
 
